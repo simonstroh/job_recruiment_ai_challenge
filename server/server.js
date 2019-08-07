@@ -125,6 +125,12 @@ app.post('/candidates', (req, res) => {
 app.get('/uploads/:filename', (req, res) => {
   res.sendFile(path.join(__dirname, '..', 'uploads', req.params.filename))
 })
+app.get('/assets/GeicoLogo.png', (req, res) => {
+  res.sendFile(path.join(__dirname, '..', 'assets', 'GeicoLogo.png'))
+})
+app.get('/portal', (req, res) => {
+  res.sendFile(path.join(__dirname, '..', 'public', 'portal.html'))
+})
 app.post('/likelihood', (req, res) => {
   var { skills, experience, gpa } = req.body
   console.log(JSON.stringify(req.body))

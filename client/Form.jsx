@@ -118,7 +118,7 @@ export default class Form extends React.Component {
       skills: this.state.skills,
       experiences: this.state.experiences,
     }
-    fetch('http://localhost:3031/uploads', {
+    fetch('/uploads', {
       method: 'POST',
       body: data
     })
@@ -133,7 +133,7 @@ export default class Form extends React.Component {
         gpa: this.state.gpa
       }
       console.log(json)
-      fetch('http://localhost:3031/candidates', {
+      fetch('/candidates', {
         method: 'POST',
         body: JSON.stringify(json),
         headers: {

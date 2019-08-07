@@ -35,7 +35,7 @@ class Rows extends React.Component {
     firebase.firestore().collection('candidates').doc(id).delete()
   }
   open(filename) {
-    var url = `http://localhost:3031/uploads/${filename}`
+    var url = `/uploads/${filename}`
     var win = window.open(url)
     win.focus()
   }
