@@ -138,4 +138,4 @@ app.post('/likelihood', (req, res) => {
   res.send(output)
 })
 
-app.listen(3031)
+app.listen(80)
