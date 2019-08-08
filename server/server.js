@@ -138,4 +138,8 @@ app.post('/likelihood', (req, res) => {
   res.send(output)
 })
 
-app.listen(80)
+const PORT = process.env.PORT || 3031
+app.listen(PORT, err => {
+    if(err) throw err;
+    console.log("%c Server running", "color: green");
+})
