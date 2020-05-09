@@ -1,4 +1,4 @@
-import { setRows } from './../redux/app-redux.js'
+import { setRows } from './../redux'
 
 const mapStateToProps = (state) => {
   return {

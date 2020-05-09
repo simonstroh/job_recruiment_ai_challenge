@@ -2,7 +2,6 @@ import React from 'react'
 import Chip from '@material-ui/core/Chip'
 import TextField from '@material-ui/core/TextField'
 import Button from '@material-ui/core/Button'
-import firebase from './../firebase/app-firebase'
 import skills from './skills'
 import experiences from './experiences'
 
@@ -132,7 +131,6 @@ export default class Form extends React.Component {
         filename: filename,
         gpa: this.state.gpa
       }
-      console.log(json)
       fetch('/candidates', {
         method: 'POST',
         body: JSON.stringify(json),
@@ -140,6 +138,7 @@ export default class Form extends React.Component {
           'Content-Type': 'application/json'
         }
       })
+      .then(res => alert('Your application has been submitted.'))
     })
   }
   render() {
