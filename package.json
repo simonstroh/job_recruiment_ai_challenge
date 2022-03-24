@@ -25,7 +25,7 @@
     "firebase": "^5.9.0",
     "kind-of": ">=6.0.3",
     "lokijs": "^1.5.6",
-    "minimist": ">=0.2.1",
+    "minimist": ">=1.2.6",
     "multer": "^1.4.1",
     "pdfjs-dist": "^2.0.943",
     "react": "^16.8.4",
